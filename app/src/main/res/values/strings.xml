@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mensajeria</string>
+    <string name="mensajeria">Mensajeria</string>
+    <string name="aqui_viene_el_texto_recibido">Aqui viene el texto recibido</string>
+    <string name="enviar">Enviar</string>
+    <string name="esbribe_aqui_tu_mensaje">Esbribe aqui tu mensaje</string>
+    <string name="responder">Responder</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/noche_fondo"
+    tools:context=".pantalla2Activity">
+
+    <TextView
+        android:id="@+id/txt_titulo2"
+        android:layout_width="374dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="@dimen/maergenes1"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/maergenes1"
+        android:gravity="center"
+        android:text="@string/mensajeria"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tamTitulo"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_recibido2"
+        android:layout_width="374dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/aqui_viene_el_texto_recibido"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/txt_titulo2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_titulo2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo2" />
+
+    <EditText
+        android:id="@+id/txt_enviado2"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/esbribe_aqui_tu_mensaje"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txt_recibido2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_recibido2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_recibido2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="156dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/responder"
+        android:textColor="@color/purple_700"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_enviado2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_enviado2"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
